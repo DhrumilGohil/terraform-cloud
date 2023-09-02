@@ -27,3 +27,12 @@ resource "aws_instance" "app_server" {
     Name = var.instance_name
   }
 }
+
+resource "aws_instance" "dhrumil_server" {
+  ami           = "ami-08d70e59c07c61a3a"
+  instance_type = "t2.micro"
+
+  tags = {
+    Name = "Dhrumil_Gohil"
+  }
+}
